@@ -13,7 +13,7 @@ const firebaseConfig = {
     appId: "1:1069776396379:web:2672e5b1a0135efd08df7e",
     // 🚨 ADICIONADO: Você deve incluir a URL do banco de dados, que é crucial!
     // Você a encontrará no console, na seção "Realtime Database"
-    databaseURL: "SUA_URL_DO_REALTIME_DATABASE_AQUI" 
+    databaseURL: "https://casa-4011d-default-rtdb.firebaseio.com" 
 };
 
 // Inicialização
