@@ -1,0 +1,91 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#saldo-display {
+    margin: 15px 0;
+}
+
+#saldo-valor {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Estilo do Formulário */
+#formulario {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#transacao-form input, #transacao-form select, #transacao-form button {
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#transacao-form button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+/* Estilo da Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #eee;
+}
+
+/* CLASSES DE ALERTA DE VENCIMENTO - O MAIS IMPORTANTE NO CSS */
+.alerta-vencido {
+    background-color: #ffdddd !important; /* Vermelho Claro */
+    color: #cc0000;
+    font-weight: bold;
+}
+
+.alerta-proximo {
+    background-color: #fffacd !important; /* Amarelo Claro */
+}
+
+/* Estilos de Tipo de Transação */
+.receita {
+    color: #28a745; /* Verde */
+}
+.despesa {
+    color: #dc3545; /* Vermelho */
+}
