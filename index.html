@@ -38,21 +38,24 @@
         <section id="historico">
             <h3>Histórico de Transações</h3>
             <table>
-                <thead>
-                    <tr>
-                        <th>Data</th>
-                        <th>Descrição</th>
-                        <th>Tipo</th>
-                        <th>Vencimento</th>
-                        <th>Valor</th>
-                        <th>Ação</th>
-                    </tr>
-                </thead>
-                <tbody id="transacoes-lista">
-                    </tbody>
-            </table>
+        <thead>
+            <tr>
+            <th>Data</th>
+            <th>Descrição</th>
+            <th>Tipo</th>
+            <th>Vencimento</th>
+            <th>Valor</th>
+            <th>Pago?</th> <th>Ação</th>
+            </tr>
+            </thead>
+            <tbody id="transacoes-lista">
+            </tbody>
+        </table>
         </section>
     </main>
+
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database.js"></script>
 
     <script src="script.js"></script>
 </body>

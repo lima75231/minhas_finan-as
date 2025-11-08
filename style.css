@@ -89,3 +89,17 @@ th {
 .despesa {
     color: #dc3545; /* Vermelho */
 }
+
+/* NOVO ESTILO: Para contas marcadas como pagas */
+.transacao-paga {
+    background-color: #e9ffe9; /* Verde bem claro */
+    text-decoration: line-through; /* Riscado */
+    color: #6c757d; /* Cinza suave */
+}
+
+/* Garante que o alerta de vencimento não se sobreponha totalmente */
+.transacao-paga.alerta-vencido, .transacao-paga.alerta-proximo {
+    /* Remove o riscado e a cor cinza dos itens pagos se eles ainda estiverem em alerta (embora não devessem) */
+    text-decoration: none; 
+    color: inherit;
+}
