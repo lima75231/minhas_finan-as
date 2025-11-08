@@ -1,20 +1,24 @@
-// Removidas as variáveis e chaves do localStorage.
 const form = document.getElementById('transacao-form');
 const transacoesLista = document.getElementById('transacoes-lista');
 const saldoValor = document.getElementById('saldo-valor');
 
 // 1. CONFIGURAÇÃO E INICIALIZAÇÃO DO FIREBASE
 const firebaseConfig = {
+    // 🚨 COPIADO DO SEU CÓDIGO GERADO:
     apiKey: "AIzaSyCupYqHhZ41FrlAhWP4vC4Rb13O_yvg1dA",
     authDomain: "casa-4011d.firebaseapp.com",
     projectId: "casa-4011d",
     storageBucket: "casa-4011d.firebasestorage.app",
     messagingSenderId: "1069776396379",
     appId: "1:1069776396379:web:2672e5b1a0135efd08df7e",
-    measurementId: "G-P8MSY41D1V"
+    // 🚨 ADICIONADO: Você deve incluir a URL do banco de dados, que é crucial!
+    // Você a encontrará no console, na seção "Realtime Database"
+    databaseURL: "SUA_URL_DO_REALTIME_DATABASE_AQUI" 
 };
 
+// Inicialização
 const app = firebase.initializeApp(firebaseConfig);
+// Obtém a referência ao banco de dados, usando a sintaxe clássica
 const database = firebase.database();
 const dbRef = database.ref('transacoes'); // Referência à coleção de transações
 let transacoes = []; // O array será preenchido pelos dados do Firebase
